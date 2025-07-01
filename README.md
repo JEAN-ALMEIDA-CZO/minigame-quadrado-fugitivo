@@ -1,8 +1,8 @@
 # 🟥 Quadrado Fugitivo
 
 [![Licença MIT](https://img.shields.io/badge/Licen%C3%A7a-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Problemas Abertos](https://img.shields.io/github/issues/JEAN-ALMEIDA-CZO/quadrado-fugitivo?color=red)](https://github.com/JEAN-ALMEIDA-CZO/minigame-quadrado-fugitivo/issues)
-[![Último Commit](https://img.shields.io/github/last-commit/JEAN-ALMEIDA-CZO/quadrado-fugitivo?color=blue)](https://github.com/JEAN-ALMEIDA-CZO/minigame-quadrado-fugitivo/commits)
+[![Problemas Abertos](https://img.shields.io/github/issues/JEAN-ALMEIDA-CZO/minigame-quadrado-fugitivo?color=red)](https://github.com/JEAN-ALMEIDA-CZO/minigame-quadrado-fugitivo/issues)
+[![Último Commit](https://img.shields.io/github/last-commit/JEAN-ALMEIDA-CZO/minigame-quadrado-fugitivo?color=blue)](https://github.com/JEAN-ALMEIDA-CZO/minigame-quadrado-fugitivo/commits)
 
 Um jogo web hilário, provocativo e quase terapêutico.  
 Tente clicar em um quadrado que **foge do seu mouse**, enquanto é desafiado por mensagens sarcásticas, risadas maldosas e lições de vida inesperadas.
