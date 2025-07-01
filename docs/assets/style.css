@@ -1,0 +1,238 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+  font-size: 16px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#mensagem {
+  margin: 10px;
+  font-size: 1.2em;
+  height: 2em;
+  padding: 0 10px;
+}
+
+#quadrado {
+  width: 10vw;
+  height: 10vw;
+  max-width: 100px;
+  max-height: 100px;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: crimson;
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 0 20px crimson;
+  transition: top 0.1s linear, left 0.1s linear;
+}
+
+#pontuacao {
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#rage {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+#modalPermissaoAudio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+#modalPermissaoAudioContent {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 46px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 184, 148, 0.6);
+  animation: aparecer 0.5s ease;
+  max-width: 450px;
+  width: 90vw;
+}
+
+#modalZen, #modalVitoria {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modalContent {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 46px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  animation: aparecer 0.5s ease;
+  max-width: 400px;
+  width: 90vw;
+}
+
+@keyframes aparecer {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modalBotao {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  width: auto;
+  min-width: 100px;
+}
+
+.botaoSofrer {
+  background-color: crimson;
+  color: white;
+}
+
+.botaoZen, .botaoPermissaoAudio {
+  background-color: #00b894;
+  color: white;
+}
+
+#modalVitoria {
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 2000;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+#modalVitoria img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+#mensagemVitoria {
+  font-size: 1.3em;
+  max-width: 600px;
+  color: #f1c40f;
+  line-height: 1.6em;
+  margin: 0 auto;
+}
+
+#botaoCopiar {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #00b894;
+  color: white;
+}
+
+#mensagemProvocacao {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  display: none;
+  z-index: 500;
+  animation: fadeInOut 4s ease forwards;
+  max-width: 90vw;
+  text-align: center;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  #mensagem {
+    font-size: 1em;
+  }
+
+  #pontuacao {
+    font-size: 1em;
+  }
+
+  #rage {
+    font-size: 1.2em;
+  }
+
+  .modalBotao, #botaoCopiar {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  #mensagemVitoria {
+    font-size: 1em;
+    max-width: 90vw;
+  }
+
+  #modalVitoria img {
+    width: 100px;
+  }
+
+  #mensagemProvocacao {
+    font-size: 1em;
+    padding: 15px 20px;
+  }
+
+  #modalContent,
+  #modalPermissaoAudioContent {
+    padding: 20px;
+    max-width: 90vw;
+  }
+}
+
+@media (max-height: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+}

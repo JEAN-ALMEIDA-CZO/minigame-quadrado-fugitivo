@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quadrado Fugitivo</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <h1>Quadrado Fugitivo</h1>
+  <div id="mensagem">Seu mouse consegue. Você? 🤔</div>
+  <div id="quadrado" onclick="clicouNoQuadrado()"></div>
+  <div id="pontuacao">Pontuação: 0 de 15</div>
+  <div id="rage">Você desbloqueou o colapso psicológico!!!</div>
+
+  <div id="modalPermissaoAudio">
+    <div id="modalPermissaoAudioContent">
+      <h2>Permitir Som? 🔊</h2>
+      <p>Este jogo usa sons para aumentar a imersão (e a frustração!). Deseja ativá-los?</p>
+      <button class="modalBotao botaoPermissaoAudio" onclick="iniciarJogoComAudio()">Sim, quero sofrer com som!</button>
+      <button class="modalBotao botaoSofrer" onclick="iniciarJogoSemAudio()">Não, prefiro o silêncio da derrota.</button>
+    </div>
+  </div>
+
+  <div id="modalZen">
+    <div id="modalContent">
+      <p id="textoZen"></p>
+      <button class="modalBotao botaoSofrer" onclick="fecharModalZen()">Continuar sofrendo</button>
+      <button class="modalBotao botaoZen" onclick="ativarModoZen()">🧘 Entrar no Modo Zen</button>
+    </div>
+  </div>
+
+  <div id="modalVitoria">
+    <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" alt="Troféu de Vitória">
+    <div id="mensagemVitoria">
+      Você foi humilhado por um quadrado. <br>
+      Te fez correr, te frustrou, te testou. <br>
+      <strong>Mas você não desistiu.</strong><br><br>
+      E é isso que separa os que caem dos que vencem.   
+      A vida também tenta te derrubar — e vai tentar de novo.<br><br>
+      Mas há algo maior te esperando além da dor.   
+      <strong>Mantenha a fé.</strong><br>
+      Porque depois da montanha…   
+      <em>existe um paraíso que só os corajosos conseguem ver.</em> 🌄
+    </div>
+    <button id="botaoCopiar" onclick="copiarMensagemVitoria()">Copiar Mensagem</button>
+  </div>
+  <div id="mensagemProvocacao"></div>
+  <script src="assets/script.js"></script>
+</body>
+</html>
